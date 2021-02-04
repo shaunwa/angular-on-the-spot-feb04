@@ -1,0 +1,5 @@
+<app-person-info
+    *ngFor="let person of people; index as i"
+    [i]="i"
+    [person]="person"
+    (personClicked)="onPersonClicked($event)"></app-person-info>

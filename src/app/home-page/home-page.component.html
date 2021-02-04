@@ -1,0 +1,9 @@
+<h1>Welcome! This is the Home Page</h1>
+<a routerLink="/counter">See the counter button</a>
+<a routerLink="/person-info">See the person-info list</a>
+<h3>Our users include:</h3>
+<p *ngFor="let name of names">{{name}}</p>
+
+<app-my-wrapper-component>
+    <app-some-other-comp></app-some-other-comp>
+</app-my-wrapper-component>

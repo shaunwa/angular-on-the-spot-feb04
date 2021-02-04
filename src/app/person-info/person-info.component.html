@@ -1,0 +1,9 @@
+<h3>{{i + 1}}. Name: {{person.firstName}} {{person.lastName}}</h3>
+<p *ngIf="person.age">Age: {{person.age}}</p>
+<p *ngIf="!person.age">Age not specified</p>
+<p>Favorite Foods:</p>
+<p *ngIf="!person.favoriteFoods">No favorite foods reported</p>
+<ul *ngIf="person.favoriteFoods">
+    <li *ngFor="let food of person.favoriteFoods">{{food}}</li>
+</ul>
+<button (click)="onButtonClicked(person.firstName)">Click me!</button>
